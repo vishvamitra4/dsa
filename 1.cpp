@@ -1,20 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    int maxProfit(vector<int> &prices)
-    {
-        int n = prices.size();
-        int profit = 0;
-        int mini = prices[0];
-        for(int i = 1; i < n; i++) {
-            profit = max(profit , prices[i] - mini);
-            mini = min(mini , prices[i]);
+    void sortColors(vector<int>& nums) {
+        int n = nums.size();
+        int low = 0;
+        int mid = 0;
+        int high = n - 1;
+        while(mid <= high) {
+            if(nums[mid] == 0) swap(nums[mid++] , nums[low++]);
+            else if(nums[mid] == 2) swap(nums[mid] , nums[high--]);
+            else mid++;
         };
-
-        return profit;
+        return;
     }
 };
 
@@ -23,4 +22,3 @@ int main()
 
     return 0;
 }
-
