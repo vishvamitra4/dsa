@@ -1,0 +1,53 @@
+# ---- Compiled object files ----
+*.o
+*.obj
+*.lo
+*.la
+*.al
+
+# ---- Compiled Dynamic libraries ----
+*.so
+*.dylib
+*.dll
+
+# ---- Compiled Static libraries ----
+*.a
+*.lib
+
+# ---- Executables ----
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# ---- Debug / Release files ----
+*.dSYM/
+*.stackdump
+*.map
+*.exp
+*.pdb
+
+# ---- CMake / Build folders ----
+/build/
+/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ---- Visual Studio Code ----
+.vscode/
+*.code-workspace
+
+# ---- CLion / JetBrains ----
+.idea/
+cmake-build-*/
+
+# ---- Mac / Windows system files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
